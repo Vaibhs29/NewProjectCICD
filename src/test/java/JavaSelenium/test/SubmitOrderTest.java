@@ -38,6 +38,7 @@ public class SubmitOrderTest extends BaseTest {
 			// Verify Order Confirmation
 			String confirmMsg = confirm.getconfirmationmesaage();
 			Assert.assertTrue(confirmMsg.equalsIgnoreCase("Thankyou for the order."));
+			// Need to validate final message here , which is fixed by one of CDEX
 
 			System.out.println("Your order placed successfully");
 
