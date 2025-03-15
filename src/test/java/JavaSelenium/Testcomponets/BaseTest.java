@@ -47,7 +47,7 @@ public class BaseTest {
 
 	}
 
-	@BeforeMethod(alwaysRun = true)
+	@BeforeMethod(alwaysRun = true) // in any case this should be true
 
 	public LandingPage launchApplication() throws IOException {
 		driver = initializeDriver();
@@ -56,7 +56,7 @@ public class BaseTest {
 		return landingPage;
 	}
 
-	@AfterMethod(alwaysRun = true)
+	@AfterMethod(alwaysRun = true)  // this is also should be true to quite a browser 
 
 	public void closeBrowser() {
 		driver.close();
