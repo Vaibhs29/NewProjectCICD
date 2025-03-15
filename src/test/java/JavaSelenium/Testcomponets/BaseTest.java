@@ -56,7 +56,7 @@ public class BaseTest {
 		return landingPage;
 	}
 
-	@AfterMethod(alwaysRun = true)
+	@AfterMethod(alwaysRun = true)  // this is also should be true to quite a browser 
 
 	public void closeBrowser() {
 		driver.close();
